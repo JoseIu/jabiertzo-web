@@ -1,0 +1,30 @@
+.header {
+  margin-bottom: 2rem;
+  &__container {
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 700;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  &__item {
+  }
+  &__item {
+  }
+  &__link {
+    font-weight: 500;
+  }
+}
