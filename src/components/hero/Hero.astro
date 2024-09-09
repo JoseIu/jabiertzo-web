@@ -1,0 +1,24 @@
+---
+import './hero.scss';
+import YoutubeIcon from '../icons/YoutubeIcon.astro';
+---
+
+<section class="hero wrapper">
+  <div class="hero__content">
+    <h1 class="hero__title">Bienvenidos a Historias de China</h1>
+    <p class="hero__description">
+      Un blog creado con el objetivo de acercar el mundo chino a los lectores interesados y a los curiosos en
+      general
+    </p>
+
+    <div class="hero__btns">
+      <a href="#" class="hero__btn">
+        <YoutubeIcon className="icon" />
+        Susbribete</a
+      >
+      <a href="#">* En directo</a>
+    </div>
+  </div>
+
+  <lite-youtube videoid="jtZ9ZxTD5N0" title="hola" class="hero__video video"></lite-youtube>
+</section>

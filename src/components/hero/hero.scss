@@ -1,0 +1,49 @@
+.hero {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  &__content {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 30rem;
+  }
+  &__video {
+    flex-basis: 34rem;
+    flex-grow: 1;
+    max-width: 40rem;
+    border-radius: 0.3rem;
+  }
+  &__title {
+    font-size: clamp(2rem, 8vw, 4rem);
+    margin-bottom: 1rem;
+    font-weight: 800;
+  }
+  &__description {
+    max-width: 40rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: 2rem;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    background-color: var(--muted-dark);
+    color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 500;
+  }
+}
+.icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
