@@ -3,13 +3,17 @@
 }
 .bento {
   display: grid;
-  grid-template-columns: 20rem 20rem;
-  grid-template-rows: 10rem 10rem;
-  grid-template-areas:
-    'foto1 foto1 foto2'
-    'foto1 foto1 foto3';
-
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: 1rem;
+
+  @media screen and (min-width: 950px) {
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: 10rem 10rem;
+
+    grid-template-areas:
+      'foto1 foto1 foto2'
+      'foto1 foto1 foto3';
+  }
 
   &__span {
     font-weight: 600;
@@ -18,8 +22,9 @@
   &__1,
   &__2,
   &__3 {
-    outline: 2px solid var(--foreground);
+    padding: 2rem;
     border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     display: flex;
     flex-direction: column;
@@ -34,18 +39,27 @@
   }
 
   &__1 {
-    grid-area: foto1;
     background-color: #fdf88c;
   }
   &__2 {
-    grid-area: foto2;
     background-color: #c6a15b;
   }
   &__3 {
-    grid-area: foto3;
     background-color: #7ebdc2;
   }
   &__icon {
     width: 4rem;
+  }
+
+  @media screen and (min-width: 950px) {
+    &__1 {
+      grid-area: foto1;
+    }
+    &__2 {
+      grid-area: foto2;
+    }
+    &__3 {
+      grid-area: foto3;
+    }
   }
 }
