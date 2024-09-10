@@ -1,0 +1,46 @@
+.twitch {
+  padding: 3rem 1rem;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__content {
+    padding-top: 4rem;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 30rem;
+  }
+  &__title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 800;
+
+    margin-bottom: 2rem;
+  }
+  &__span {
+    color: var(--twitch-color);
+  }
+  &__icon {
+    width: 1rem;
+  }
+  &__btn {
+    padding: 0.5rem 2rem;
+    border-radius: 0.4rem;
+    background-color: var(--twitch-color);
+    color: var(--background);
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  &__chanel {
+    aspect-ratio: 16/9;
+    flex-basis: 40rem;
+    max-width: 40rem;
+    flex-grow: 1;
+    border-radius: 0.3rem;
+  }
+}

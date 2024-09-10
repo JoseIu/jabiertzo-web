@@ -1,0 +1,27 @@
+---
+import './twitch.scss';
+import TwitchIcon from '../icons/TwitchIcon.astro';
+---
+
+<section class="twitch wrapper">
+  <h2 class="title">Únete a nosotros en Twitch 🎥</h2>
+
+  <div class="twitch__container">
+    <div class="twitch__content">
+      <h3 class="twitch__title">
+        Mira nuestras transmisiones IRL y sesiones de juego en vivo en <span class="twitch__span">Twitch</span
+        >.
+      </h3>
+      <button class="twitch__btn">
+        <TwitchIcon className="twitch__icon" />
+        Siguenos
+      </button>
+    </div>
+    <iframe
+      src="https://player.twitch.tv/?channel=jabiertzo&parent=localhost"
+      class="twitch__chanel"
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+</section>
