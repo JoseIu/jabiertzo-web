@@ -7,7 +7,8 @@
   &__content {
     flex-basis: 0;
     flex-grow: 999;
-    min-width: 30rem;
+    min-width: calc(42% - 2rem);
+    // min-width: 30rem;
   }
   &__video {
     flex-basis: 34rem;
