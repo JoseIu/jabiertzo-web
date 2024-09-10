@@ -1,0 +1,23 @@
+.footer {
+  background-color: var(--foreground);
+  color: var(--background);
+  padding: 2rem;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  &__item {
+  }
+  &__link {
+  }
+  &__icon {
+    width: 1.5rem;
+  }
+}

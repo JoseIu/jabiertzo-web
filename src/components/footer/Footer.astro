@@ -1,0 +1,36 @@
+---
+import TwitchIcon from '../icons/TwitchIcon.astro';
+import YoutubeIcon from '../icons/YoutubeIcon.astro';
+import InstagramIcon from '../icons/InstagramIcon.astro';
+import FacebookIcon from '../icons/FaceBookIcon.astro';
+import './footer.scss';
+---
+
+<footer class="footer">
+  <div class="footer__container wrapper">
+    <h2 class="logo">Jabiertzo</h2>
+
+    <ul class="socials">
+      <li class="socials__item">
+        <a class="socials__link" href="" aria-label="link to go Twitch">
+          <TwitchIcon className="socials__icon" />
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="" aria-label="link to go Youtube">
+          <YoutubeIcon className="socials__icon" />
+        </a>
+      </li>
+      <li>
+        <a class="socials__link" href="" aria-label="link to go Instagram">
+          <InstagramIcon className="socials__icon" />
+        </a>
+      </li>
+      <li>
+        <a class="socials__link" href="" aria-label="link to go Facebook">
+          <FacebookIcon className="socials__icon" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
