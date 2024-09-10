@@ -7,11 +7,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
-  &__logo {
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
-    font-weight: 700;
-  }
 }
 
 .nav {
@@ -25,6 +20,6 @@
   &__item {
   }
   &__link {
-    font-weight: 500;
+    font-weight: 600;
   }
 }
