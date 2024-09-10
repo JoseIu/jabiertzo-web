@@ -7,10 +7,9 @@
     gap: 2rem;
   }
   &__content {
-    padding-top: 4rem;
     flex-basis: 0;
     flex-grow: 999;
-    min-width: 30rem;
+    min-width: calc(42% - 2rem);
   }
   &__title {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
