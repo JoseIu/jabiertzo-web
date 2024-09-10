@@ -1,0 +1,26 @@
+---
+import { VIDEOS } from '../data/videos';
+import './posts.scss';
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<section class="posts wrapper">
+  <h2 class="title">{title}</h2>
+
+  <div class="posts__list">
+    {
+      VIDEOS.map(video => (
+        <article class="post">
+          <img class="post__img" src={video.image} alt={video.title} />
+          <div class="post__content">
+            <h3 class="post__title">{video.title}</h3>
+            <p class="post__description">{video.description}</p>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>
